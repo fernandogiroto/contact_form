@@ -1,12 +1,14 @@
 # Formulário de Contacto PHP e Bootstrap 4
-This is one of my first websites created using Bootstrap4 and Gulp. It was a very interesting project because it was a refectoring of the company's old website. It was thought so that it did not mess around much like the frequent users of the site did not feel as much difference in the hour to find information because already they were accustomed with the form that was presented.
+Formulário criado em php usando apenas o bootstrap 4. Validação interna de preenchimento correto do email
+e dos campos Nome, Telefone, Morada, Passaporte e Data de Nascimento
 
 ## Used Programming Languages
 
 ```bash
 <!DOCTYPE html>
 <head>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <?php
     // Mensagem Variavéis
@@ -35,7 +37,7 @@ This is one of my first websites created using Bootstrap4 and Gulp. It was a ver
         }else{
           // Se passar enviar o email com o
           // Seguinte Formato
-          $toEmail = 'mail@fernandoportugal.com';
+          $toEmail = 'seuemail@email.com';
           $subject = 'Mensagem Enviada por ' .$name;
           $body = '   <h2>Mensagem via website</h2>
                       <h4>Nome:</h4><p>'.$name.'</p>
@@ -139,9 +141,10 @@ This is one of my first websites created using Bootstrap4 and Gulp. It was a ver
                 </div>
               </div>
               <div class="form-group col-12">
-              <label for="mensagem">Como posso ajudar?</label>
-										<textarea name="mensagem" class="form-control" id="exampleFormControlTextarea1" placeholder="Sua Mensagem" rows="3" value="<?php echo isset($_POST['mensagem']) ? $mensagem: ''; ?>"></textarea>
-									</div>
+                <label for="mensagem">Como posso ajudar?</label>
+                <textarea name="mensagem" class="form-control" id="exampleFormControlTextarea1" placeholder="Sua Mensagem"
+                    rows="3" value="<?php echo isset($_POST['mensagem']) ? $mensagem: ''; ?>"></textarea>
+              </div>
               <button type="submit" name="submit" class="btn btn-primary btn-lg mt-3 mx-auto">Enviar Mensagem</button>
             </div>
           </form>
@@ -149,11 +152,12 @@ This is one of my first websites created using Bootstrap4 and Gulp. It was a ver
       </div>
     </div>
   </body>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 
 ```
