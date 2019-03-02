@@ -2,7 +2,7 @@
 Formulário criado em php usando apenas o bootstrap 4. Validação interna de preenchimento correto do email
 e dos campos Nome, Telefone, Morada, Passaporte e Data de Nascimento
 
-## Used Programming Languages
+## Codígo do Formulário
 
 ```bash
 <!DOCTYPE html>
@@ -162,5 +162,5 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
 
 ```
 
-## Personal Portfolio
+## Portfólio
 If you want to know more about my skills and portfolios you can visit my personal website: www.fernandoportugal.com
